@@ -1,0 +1,33 @@
+{
+  "name": "shridentalcarenew",
+  "version": "1.0.0",
+  "description": "Shri Dental Care official website",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "kamothe",
+    "navi-mumbai"
+  ],
+  "author": "Shri Dental Care",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "heic-convert": "^2.1.0",
+    "lucide-react": "^1.38.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1"
+  },
+  "type": "module"
+}

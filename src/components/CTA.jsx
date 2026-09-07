@@ -1,0 +1,3 @@
+import { ArrowUpRight, MessageCircle, Phone } from 'lucide-react'
+import { clinic } from '../data/clinic'
+export default function CTA({ title = 'Your healthiest smile starts here.', className = '', showMark = false }) { return <section className={`cta ${className}`}><div className="shell cta-inner">{showMark && <div className="cta-mark"><MessageCircle size={21}/></div>}<div className="cta-copy"><span className="eyebrow light">Let’s make it happen</span><h2>{title}</h2></div><div className="cta-actions"><a className="btn btn-light" href={clinic.appointment} target="_blank" rel="noreferrer">Book an Appointment <ArrowUpRight size={17}/></a><a className="btn btn-ghost" href={`tel:${clinic.phone}`}><Phone size={17}/> Call now</a></div></div></section> }
