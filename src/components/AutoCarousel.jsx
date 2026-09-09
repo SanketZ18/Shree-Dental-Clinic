@@ -37,6 +37,8 @@ export default function AutoCarousel({
   const displayName    = activeSlide.name || caption
   const displaySubcap  = activeSlide.role  || subcaption
 
+  const hasSlideNames = images.some(img => img.name)
+
   return (
     <div className={`hero-carousel ${className}`}>
       <div className="carousel-image-wrap">
@@ -50,6 +52,13 @@ export default function AutoCarousel({
           />
         ))}
       </div>
+
+      {hasSlideNames && (
+        <div className="carousel-doctor-caption">
+          <strong>{displayName}</strong>
+          {displaySubcap && <span>{displaySubcap}</span>}
+        </div>
+      )}
 
       <div className="carousel-controls">
         <button onClick={() => move(-1)} aria-label="Previous image">

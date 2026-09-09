@@ -5,11 +5,11 @@ import Badge from '../components/ui/Badge'
 import AutoCarousel from '../components/AutoCarousel'
 import { clinic, specialists } from '../data/clinic'
 
-const doctorImages = specialists.map(([name, role, src]) => ({
+const doctorImages = specialists.map(([name, role, src, , qualification, experience]) => ({
   src,
   alt: `${name} - ${role}`,
   name,
-  role,
+  role: [qualification, experience].filter(Boolean).join(' · '),
 }))
 
 export default function Team() {
@@ -38,7 +38,7 @@ export default function Team() {
               </a>
             </div>
           </div>
-          <div className="team-lead-image team-carousel">
+          <div className="team-carousel">
             <AutoCarousel
               images={doctorImages}
               subcaption="Multi-specialist clinical team at Shri Dental Care"
