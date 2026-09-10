@@ -286,7 +286,7 @@ export const clinicalHighlights = [
     icon: 'Clock3'
   },
   {
-    title: '15+ Years Serving Kamothe',
+    title: '10+ Years Practice (Since 2013)',
     desc: 'Trusted by over 5,000+ local families, police personnel, and corporate professionals across Navi Mumbai.',
     icon: 'Award'
   }
