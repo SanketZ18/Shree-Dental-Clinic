@@ -185,7 +185,7 @@ export default function Home() {
           <div className="bento-heading">
             <div>
               <Badge variant="blue">Your Visit Experience</Badge>
-              <h2>How we care for <em>your teeth.</em></h2>
+              <h2>How  we  care  for <em> your  teeth.</em></h2>
             </div>
             <p>
               A transparent, smooth 4-step consultation process ensuring you understand every aspect of your oral health.

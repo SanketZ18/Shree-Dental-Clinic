@@ -6,7 +6,7 @@ export const clinic = {
   address: 'Shop No 27, 28, Satyaketu Complex, Plot No 09, Opp Union Bank Of India, Near Police Station, Sector 35, Kamothe, Navi Mumbai — 410209',
   experience: '15+',
   patients: '5,000+',
-  serviceCount: 11,
+  serviceCount: 12,
   rating: '4.9/5',
   reviewCount: '500+',
   timings: 'Monday – Sunday: 10:00 AM to 10:00 PM (Open All 7 Days)',
@@ -221,6 +221,13 @@ export const serviceCategories = [
     'Mouthguards for sports',
     'Oral cancer screening',
     'Biopsy of oral lesions'
+  ]],
+  ['Root Canal Retreatment (Re-RCT)', [
+    'Re-cleaning & reshaping of previously treated canals',
+    'Removal of old filling material and infection',
+    'Laser-assisted canal sterilisation',
+    'Re-sealing with bio-compatible material',
+    'Crown restoration after retreatment'
   ]]
 ]
 
@@ -231,7 +238,7 @@ export const specialists = [
     '/images/DRs/Shrutika nanaware.PNG',
     'BDS · Dental Surgeon (Since 2013). Experienced Dental Surgeon in Navi Mumbai with more than 10 years of clinical practice across top hospitals. Blends modern technology with gentle guidance in general, cosmetic and restorative dentistry. Believes good care begins with listening.',
     'BDS',
-    '10+ Years Practice (Since 2013)'
+    '15+ Years of experience'
   ],
   [
     'Dr. Vina Madavi',
@@ -295,7 +302,7 @@ export const clinicalHighlights = [
 export const patientJourney = [
   {
     step: '01',
-    title: 'Digital Consultation & X-Ray',
+    title: 'Digital Consultation & X-Ray, Portable X-ray, CBCT, OPG',
     desc: 'Detailed examination with high-definition intraoral cameras and instant digital RVG X-rays to accurately pinpoint the root cause of any issue.'
   },
   {
@@ -311,7 +318,7 @@ export const patientJourney = [
   {
     step: '04',
     title: 'Dedicated Aftercare & Advice',
-    desc: 'Receive comprehensive home-care instructions, prescribed medications, and follow-up support to ensure long-lasting oral health.'
+    desc: 'Receive comprehensive home-care instructions, prescribed medications, and follow-up support to ensure long-lasting oral health. Portable x-ray which causes us low radiation.'
   }
 ]
 

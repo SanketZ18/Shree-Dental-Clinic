@@ -30,6 +30,7 @@ import serviceImage8 from '../../images/Services/8.jpeg'
 import serviceImage9 from '../../images/Services/9.jpeg'
 import serviceImage10 from '../../images/Services/10.jpeg'
 import serviceImage11 from '../../images/Services/11.jpeg'
+import serviceImage12 from '../../images/Services/12.jpeg'
 
 const serviceImages = [
   serviceImage1,
@@ -42,7 +43,8 @@ const serviceImages = [
   serviceImage8,
   serviceImage9,
   serviceImage10,
-  serviceImage11
+  serviceImage11,
+  serviceImage12
 ]
 
 const serviceInformation = [
@@ -100,6 +102,11 @@ const serviceInformation = [
     text: 'Specialized care can address jaw-joint symptoms, tooth grinding, sports protection and unusual mouth sores through examination and an individual treatment plan.',
     source: 'NHS: Teeth Grinding',
     href: 'https://www.nhs.uk/symptoms/teeth-grinding/'
+  },
+  {
+    text: 'Root canal retreatment (Re-RCT) is performed when a previously treated tooth becomes re-infected or fails to heal. The canals are re-cleaned, reshaped, and re-sealed to save the natural tooth and eliminate pain.',
+    source: 'AAE: Root Canal Retreatment',
+    href: 'https://www.aae.org/patients/root-canal-treatment/what-is-a-root-canal/root-canal-retreatment/'
   }
 ]
 
@@ -114,9 +121,9 @@ const badgePalette = {
   red:    { bg: '#fee2e2', text: '#b91c1c' }
 }
 
-const categoryIcons = ['🦷', '🔧', '✨', '◈', '♡', '⚙', '◇', '⚡', '✦', '♡', '◉']
-const categoryBadges = ['COMPLETE CARE', 'RESTORE', 'SMILE DESIGN', 'PAINLESS', 'GENTLE CARE', 'PERMANENT SOLUTION', 'INVISIBLE OPTION', 'SAME DAY', 'CHILD-FRIENDLY', 'EMERGENCY CARE', 'SPECIALIST CARE']
-const categoryColors = ['mint', 'gold', 'purple', 'teal', 'pink', 'blue', 'mint', 'red', 'pink', 'red', 'purple']
+const categoryIcons = ['🦷', '🔧', '✨', '◈', '♡', '⚙', '◇', '⚡', '✦', '♡', '◉', '⌁']
+const categoryBadges = ['COMPLETE CARE', 'RESTORE', 'SMILE DESIGN', 'PAINLESS', 'GENTLE CARE', 'PERMANENT SOLUTION', 'INVISIBLE OPTION', 'SAME DAY', 'CHILD-FRIENDLY', 'EMERGENCY CARE', 'SPECIALIST CARE', 'RE-TREATMENT']
+const categoryColors = ['mint', 'gold', 'purple', 'teal', 'pink', 'blue', 'mint', 'red', 'pink', 'red', 'purple', 'teal']
 
 function ServiceCard({ service }) {
   const [optionsOpen, setOptionsOpen] = useState(false)
@@ -244,7 +251,7 @@ export default function Services() {
         <div className="shell">
           <div className="svc-featured-heading">
             <div>
-              <Badge variant="blue">Our 11 Core Services</Badge>
+              <Badge variant="blue">Our 12 Core Services</Badge>
               <h2>
                 Specialised care,<br />
                 <em>delivered with precision.</em>
