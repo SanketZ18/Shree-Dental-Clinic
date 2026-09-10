@@ -238,7 +238,7 @@ export const specialists = [
     '/images/DRs/Shrutika nanaware.PNG',
     'BDS · Dental Surgeon (Since 2013). Experienced Dental Surgeon in Navi Mumbai with more than 10 years of clinical practice across top hospitals. Blends modern technology with gentle guidance in general, cosmetic and restorative dentistry. Believes good care begins with listening.',
     'BDS',
-    '15+ Years of experience.'
+    '10+ Years Practice (Since 2013)'
   ],
   [
     'Dr. Vina Madavi',
@@ -293,7 +293,7 @@ export const clinicalHighlights = [
     icon: 'Clock3'
   },
   {
-    title: '10+ Years Practice (Since 2013)',
+    title: '15+ Years of Experience',
     desc: 'Trusted by over 5,000+ local families, police personnel, and corporate professionals across Navi Mumbai.',
     icon: 'Award'
   }
