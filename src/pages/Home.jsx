@@ -203,30 +203,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Specialist Dental Team */}
-      <section className="bento-section staff-section">
-        <div className="shell">
-          <div className="bento-heading">
-            <div>
-              <Badge variant="blue">Specialist Doctors</Badge>
-              <h2>Experienced hands,<br /><em>kind hearts.</em></h2>
-            </div>
-            <Link className="bento-link" to="/team">
-              Meet the full team <ArrowRight size={16} />
-            </Link>
-          </div>
-          <div className="staff-strip">
-            {specialists.map(([name, role, image, bio]) => (
-              <Link to="/team" className="staff-person" key={image}>
-                <img src={image} alt={name} />
-                <span>{name}</span>
-                <small>{role}</small>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 7. Patient Testimonials */}
       <section className="bento-section">
         <div className="shell">

@@ -235,7 +235,7 @@ export const specialists = [
   [
     'Dr. Shrutika S Nanaware',
     'Lead Dentist & Dental Surgeon',
-    '/images/DRs/Shrutika nanaware.PNG',
+    '/images/DRs/Dr. Shrutika nanaware.jpg',
     'BDS · Dental Surgeon (Since 2013). Experienced Dental Surgeon in Navi Mumbai with more than 10 years of clinical practice across top hospitals. Blends modern technology with gentle guidance in general, cosmetic and restorative dentistry. Believes good care begins with listening.',
     'BDS',
     '10+ Years Practice (Since 2013)'
@@ -263,6 +263,22 @@ export const specialists = [
     'BSc, BDS · 12 Years Experience. Experienced Dental Surgeon with hands-on excellence in restorative and family dentistry.',
     'BSc, BDS',
     '12 Years Experience'
+  ],
+  [
+    'Dr. Tina Gogoi',
+    'Dental Surgeon',
+    '/images/DRs/Dr. Tina Gogoi.jpeg',
+    'BDS · Dental Surgeon (5 Years Experience). Dedicated to providing gentle, high-quality clinical care, restorative procedures, and proactive oral health guidance.',
+    'BDS',
+    '5 Years Experience'
+  ],
+  [
+    'Dr. Rupali Barate',
+    'Pediatric & Preventive Dentist',
+    '/images/DRs/Dr. Rupali Barate.png',
+    'MDS (Pediatric & Preventive Dentistry) · 6 Years Experience. Specialized in fear-free, gentle child dentistry, early preventive care, and healthy young smiles.',
+    'MDS',
+    '6 Years Experience'
   ]
 ]
 
