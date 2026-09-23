@@ -49,7 +49,7 @@ const featuredServicesList = [
   },
   {
     name: 'OPG-CBCT',
-    image: imgOpgCbct,
+    image: imgOralSurgery,
     icon: '🔍',
     badge: 'DIGITAL DIAGNOSTICS',
     badgeColor: 'blue',
@@ -65,7 +65,7 @@ const featuredServicesList = [
   },
   {
     name: 'Oral Surgery',
-    image: imgOralSurgery,
+    image: imgOpgCbct,
     icon: '⚙',
     badge: 'PAIN-FREE SURGERY',
     badgeColor: 'red',
