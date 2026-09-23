@@ -1,112 +1,275 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import {
   ArrowRight,
-  CalendarDays,
   Check,
   ChevronDown,
   ChevronUp,
-  Clock3,
-  Cpu,
   HeartHandshake,
-  Info,
   ShieldCheck,
-  Sparkles,
-  Syringe,
-  X
+  Sparkles
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { createPortal } from 'react-dom'
 import CTA from '../components/CTA'
 import Badge from '../components/ui/Badge'
-import { clinic, serviceCategories } from '../data/clinic'
-import serviceImage1 from '../../images/Services/1.jpeg'
-import serviceImage2 from '../../images/Services/2.jpeg'
-import serviceImage3 from '../../images/Services/3.jpeg'
-import serviceImage4 from '../../images/Services/4.jpeg'
-import serviceImage5 from '../../images/Services/5.jpeg'
-import serviceImage6 from '../../images/Services/6.jpeg'
-import serviceImage7 from '../../images/Services/7.jpeg'
-import serviceImage8 from '../../images/Services/8.jpeg'
-import serviceImage9 from '../../images/Services/9.jpeg'
-import serviceImage10 from '../../images/Services/10.jpeg'
-import serviceImage11 from '../../images/Services/11.jpeg'
-import serviceImage12 from '../../images/Services/12.jpeg'
+import { clinic } from '../data/clinic'
 
-const serviceImages = [
-  serviceImage1,
-  serviceImage2,
-  serviceImage3,
-  serviceImage4,
-  serviceImage5,
-  serviceImage6,
-  serviceImage7,
-  serviceImage8,
-  serviceImage9,
-  serviceImage10,
-  serviceImage11,
-  serviceImage12
-]
+// Direct image imports from images/Services/
+import imgClearAligners from '../../images/Services/Clear Aligners.jpeg'
+import imgOpgCbct from '../../images/Services/OPG-CBCT.jpeg'
+import imgOralSurgery from '../../images/Services/Oral Surgery.jpeg'
+import imgOrthodontics from '../../images/Services/Orthodontics.jpeg'
+import imgPediatric from '../../images/Services/Pediatric Dentistry.jpeg'
+import imgToothReplacement from '../../images/Services/Tooth Replacement.jpeg'
+import imgCosmetic from '../../images/Services/Cosmetic Dentistry.jpeg'
+import imgDentalFilling from '../../images/Services/Dental Filling.jpeg'
+import imgEndodontic from '../../images/Services/Endodontic Treatment.jpeg'
+import imgPeriodontal from '../../images/Services/Periodontal.jpeg'
+import imgPreventive from '../../images/Services/1.jpeg'
+import imgRestorative from '../../images/Services/2.jpeg'
+import imgEmergency from '../../images/Services/10.jpeg'
+import imgSpecialized from '../../images/Services/11.jpeg'
+import imgReRct from '../../images/Services/12.jpeg'
 
-const serviceInformation = [
+const featuredServicesList = [
   {
-    text: 'Routine examinations, professional cleaning, fluoride and sealants help identify problems early and reduce the risk of cavities and gum disease.',
-    source: 'CDC: Oral Health',
-    href: 'https://www.cdc.gov/oral-health/'
+    name: 'Clear Aligners',
+    image: imgClearAligners,
+    icon: '✨',
+    badge: 'INVISIBLE OPTION',
+    badgeColor: 'mint',
+    desc: 'Custom 3D-designed clear invisible aligners for discreet, comfortable, and efficient teeth straightening without metal wires.',
+    about: {
+      text: 'Clear aligners offer a transparent, removable alternative to traditional braces. Custom-crafted trays gradually shift teeth into position while allowing easy eating and oral hygiene.'
+    },
+    checks: [
+      'Clear aligners (Invisalign & custom aligners)',
+      '3D digital smile scan & treatment plan',
+      'Removable, comfortable & virtually invisible'
+    ]
   },
   {
-    text: 'Fillings repair tooth decay, while crowns, inlays, onlays and bridges rebuild damaged teeth or replace missing tooth structure for improved function.',
-    source: 'ADA: Dental Filling Options',
-    href: 'https://www.mouthhealthy.org/all-topics-a-z/dental-filling-options'
+    name: 'OPG-CBCT',
+    image: imgOpgCbct,
+    icon: '🔍',
+    badge: 'DIGITAL DIAGNOSTICS',
+    badgeColor: 'blue',
+    desc: 'Advanced 2D Panoramic OPG and 3D CBCT volumetric digital imaging for high-precision diagnosis with ultra-low radiation.',
+    about: {
+      text: 'Digital panoramic OPG and 3D CBCT scans provide detailed views of teeth, jawbone density, root structures, and nerves, enabling safe and accurate treatment planning.'
+    },
+    checks: [
+      'Full-mouth 2D OPG panoramic X-ray',
+      '3D CBCT high-resolution scanning',
+      'Instant low-radiation digital evaluation'
+    ]
   },
   {
-    text: 'Whitening, veneers, bonding and contouring can improve the appearance of teeth. A dentist should first check that the teeth and gums are healthy.',
-    source: 'ADA: Improving Your Smile',
-    href: 'https://www.mouthhealthy.org/ways-to-improve-smile'
+    name: 'Oral Surgery',
+    image: imgOralSurgery,
+    icon: '⚙',
+    badge: 'PAIN-FREE SURGERY',
+    badgeColor: 'red',
+    desc: 'Specialized surgical extractions, painless wisdom tooth removal, bone grafting, and sinus lifts performed by experienced oral surgeons.',
+    about: {
+      text: 'Oral surgery includes planned procedures such as extractions and bone-related treatments when a tooth cannot be safely managed with routine care.'
+    },
+    checks: [
+      'Simple & surgical tooth extraction',
+      'Painless wisdom tooth removal',
+      'Jawbone grafting & sinus lift procedures'
+    ]
   },
   {
-    text: 'Root canal care treats infection inside a tooth by removing the infected pulp, cleaning the canals and sealing the tooth to help prevent reinfection.',
-    source: 'NHS: Root Canal Treatment',
-    href: 'https://www.nhs.uk/tests-and-treatments/root-canal-treatment/'
+    name: 'Orthodontics',
+    image: imgOrthodontics,
+    icon: '◇',
+    badge: 'SMILE ALIGNMENT',
+    badgeColor: 'purple',
+    desc: 'Comprehensive orthodontic correction with traditional metal braces, high-aesthetic ceramic braces, and lingual systems.',
+    about: {
+      text: 'Orthodontic treatment gradually moves teeth to improve alignment, bite and appearance using fixed braces or removable clear aligners.'
+    },
+    checks: [
+      'Metal braces & ceramic braces',
+      'Lingual braces & bite alignment',
+      'Fixed & removable retention care'
+    ]
   },
   {
-    text: 'Gum treatment focuses on removing plaque and tartar, controlling inflammation and protecting the tissues and bone that support the teeth.',
-    source: 'CDC: Periodontal Disease',
-    href: 'https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html'
+    name: 'Pediatric Dentistry',
+    image: imgPediatric,
+    icon: '♡',
+    badge: 'GENTLE CHILD CARE',
+    badgeColor: 'pink',
+    desc: 'Anxiety-free, child-friendly dental care focusing on preventive fluoride varnish, pit/fissure sealants, and pulpotomy.',
+    about: {
+      text: 'Children benefit from early dental visits, fluoride and sealants, which can help prevent cavities and build healthy habits from the first teeth onward.'
+    },
+    checks: [
+      'Child-friendly anxiety-free visits',
+      'Fluoride varnish & pit sealants',
+      'Pulpotomy / Pulpectomy care'
+    ]
   },
   {
-    text: 'Implants are placed in the jaw to support a crown, bridge or denture, providing a stable option for replacing one or more missing teeth.',
-    source: 'NHS: Dental Treatments',
-    href: 'https://www.nhs.uk/live-well/healthy-teeth-and-gums/dental-treatments/'
+    name: 'Tooth Replacement',
+    image: imgToothReplacement,
+    icon: '🔩',
+    badge: 'PERMANENT SOLUTION',
+    badgeColor: 'blue',
+    desc: 'Long-lasting titanium dental implants, implant-supported ceramic crowns/bridges, and custom removable or fixed dentures.',
+    about: {
+      text: 'Implants are placed in the jaw to support a crown, bridge or denture, providing a stable option for replacing one or more missing teeth.'
+    },
+    checks: [
+      'Titanium precision dental implants',
+      'Implant-supported crowns & bridges',
+      'Complete & partial precision dentures'
+    ]
   },
   {
-    text: 'Orthodontic treatment gradually moves teeth to improve alignment, bite and appearance using fixed braces or removable clear aligners.',
-    source: 'NHS: Dental Treatments',
-    href: 'https://www.nhs.uk/live-well/healthy-teeth-and-gums/dental-treatments/'
+    name: 'Cosmetic Dentistry',
+    image: imgCosmetic,
+    icon: '☼',
+    badge: 'SMILE MAKEOVER',
+    badgeColor: 'purple',
+    desc: 'Custom smile design combining laser teeth whitening, ultra-thin porcelain veneers, composite bonding, and tooth contouring.',
+    about: {
+      text: 'Whitening, veneers, bonding and contouring can improve the appearance of teeth. A dentist should first check that the teeth and gums are healthy.'
+    },
+    checks: [
+      'Teeth whitening (bleaching)',
+      'Porcelain veneers & dental bonding',
+      'Tooth contouring & smile design'
+    ]
   },
   {
-    text: 'Oral surgery includes planned procedures such as extractions and bone-related treatments when a tooth cannot be safely managed with routine care.',
-    source: 'ADA: Dental Treatment Terms',
-    href: 'https://www.mouthhealthy.org/dental-care/dental-treatment-terms'
+    name: 'Dental Filling',
+    image: imgDentalFilling,
+    icon: '🦷',
+    badge: 'RESTORATIVE CARE',
+    badgeColor: 'gold',
+    desc: 'Tooth-colored composite fillings, inlays, and onlays to repair decayed or broken teeth and restore original strength.',
+    about: {
+      text: 'Fillings repair tooth decay, while crowns, inlays, onlays and bridges rebuild damaged teeth or replace missing tooth structure for improved function.'
+    },
+    checks: [
+      'Tooth-colored (composite) fillings',
+      'Amalgam (silver) fillings & inlays/onlays',
+      'Seamless cavity repair & restoration'
+    ]
   },
   {
-    text: 'Children benefit from early dental visits, fluoride and sealants, which can help prevent cavities and build healthy habits from the first teeth onward.',
-    source: 'CDC: Children’s Oral Health',
-    href: 'https://www.cdc.gov/oral-health/prevention/oral-health-tips-for-children.html'
+    name: 'Endodontic Treatment',
+    image: imgEndodontic,
+    icon: '⌁',
+    badge: 'PAINLESS RCT',
+    badgeColor: 'teal',
+    desc: 'Rotary laser-assisted root canal treatment (RCT) and re-RCT retreatment to relieve toothache and save infected natural teeth.',
+    about: {
+      text: 'Root canal care treats infection inside a tooth by removing the infected pulp, cleaning the canals and sealing the tooth to help prevent reinfection.'
+    },
+    checks: [
+      'Single-visit rotary RCT treatment',
+      'Laser canal sterilization & sealing',
+      'Root canal retreatment (Re-RCT)'
+    ]
   },
   {
-    text: 'Prompt assessment can help manage dental pain, infection, broken teeth and dental trauma while protecting the tooth and surrounding tissues.',
-    source: 'NHS: Dental Treatments',
-    href: 'https://www.nhs.uk/live-well/healthy-teeth-and-gums/dental-treatments/'
+    name: 'Periodontal',
+    image: imgPeriodontal,
+    icon: '🌿',
+    badge: 'GUM HEALTH',
+    badgeColor: 'mint',
+    desc: 'Comprehensive gum care including ultrasonic scaling, deep root planing, and flap surgery to protect underlying jaw bone.',
+    about: {
+      text: 'Gum treatment focuses on removing plaque and tartar, controlling inflammation and protecting the tissues and bone that support the teeth.'
+    },
+    checks: [
+      'Scaling & root planing (deep cleaning)',
+      'Gum flap surgery & grafting',
+      'Periodontal maintenance care'
+    ]
   },
   {
-    text: 'Specialized care can address jaw-joint symptoms, tooth grinding, sports protection and unusual mouth sores through examination and an individual treatment plan.',
-    source: 'NHS: Teeth Grinding',
-    href: 'https://www.nhs.uk/symptoms/teeth-grinding/'
+    name: 'Preventive Treatments',
+    image: imgPreventive,
+    icon: '🦷',
+    badge: 'COMPLETE CARE',
+    badgeColor: 'mint',
+    desc: 'Routine examinations, professional ultrasonic scaling, fluoride varnishes and sealants to prevent dental disease.',
+    about: {
+      text: 'Routine examinations, professional cleaning, fluoride and sealants help identify problems early and reduce the risk of cavities and gum disease.'
+    },
+    checks: [
+      'Dental check-up (oral examination)',
+      'Professional teeth cleaning (scaling & polishing)',
+      'Fluoride treatment & oral hygiene instructions'
+    ]
   },
   {
-    text: 'Root canal retreatment (Re-RCT) is performed when a previously treated tooth becomes re-infected or fails to heal. The canals are re-cleaned, reshaped, and re-sealed to save the natural tooth and eliminate pain.',
-    source: 'AAE: Root Canal Retreatment',
-    href: 'https://www.aae.org/patients/root-canal-treatment/what-is-a-root-canal/root-canal-retreatment/'
+    name: 'Restorative Treatments',
+    image: imgRestorative,
+    icon: '🔧',
+    badge: 'RESTORE',
+    badgeColor: 'gold',
+    desc: 'Precision dental crowns (caps), bridges, and composite restorations to rebuild damaged teeth to full strength.',
+    about: {
+      text: 'Fillings repair tooth decay, while crowns, inlays, onlays and bridges rebuild damaged teeth or replace missing tooth structure for improved function.'
+    },
+    checks: [
+      'Tooth-colored composite & silver fillings',
+      'Dental crowns (caps) & dental bridges',
+      'Precision inlays & onlays'
+    ]
+  },
+  {
+    name: 'Emergency Dental Care',
+    image: imgEmergency,
+    icon: '⚡',
+    badge: 'EMERGENCY CARE',
+    badgeColor: 'red',
+    desc: 'Immediate same-day priority treatment for severe toothaches, broken teeth, trauma, and dental abscesses.',
+    about: {
+      text: 'Prompt assessment can help manage dental pain, infection, broken teeth and dental trauma while protecting the tooth and surrounding tissues.'
+    },
+    checks: [
+      'Same-day emergency treatment for toothache',
+      'Broken or chipped tooth repair',
+      'Knocked-out tooth & abscess management'
+    ]
+  },
+  {
+    name: 'Other Specialized Treatments',
+    image: imgSpecialized,
+    icon: '◉',
+    badge: 'SPECIALIST CARE',
+    badgeColor: 'purple',
+    desc: 'Targeted care for jaw-joint TMJ pain, custom sports mouthguards, bruxism night guards, and oral lesion screenings.',
+    about: {
+      text: 'Specialized care can address jaw-joint symptoms, tooth grinding, sports protection and unusual mouth sores through examination and an individual treatment plan.'
+    },
+    checks: [
+      'TMJ (jaw joint) disorder treatment',
+      'Night guards for teeth grinding (bruxism)',
+      'Mouthguards for sports & oral screenings'
+    ]
+  },
+  {
+    name: 'Root Canal Retreatment (Re-RCT)',
+    image: imgReRct,
+    icon: '⌁',
+    badge: 'RE-TREATMENT',
+    badgeColor: 'teal',
+    desc: 'Specialized re-cleaning and sterilisation of previously treated root canals to eliminate persistent infection.',
+    about: {
+      text: 'Root canal retreatment (Re-RCT) is performed when a previously treated tooth becomes re-infected or fails to heal. The canals are re-cleaned, reshaped, and re-sealed.'
+    },
+    checks: [
+      'Re-cleaning & reshaping of previously treated canals',
+      'Removal of old filling material & deep infection',
+      'Laser canal sterilisation & crown restoration'
+    ]
   }
 ]
 
@@ -121,10 +284,6 @@ const badgePalette = {
   red:    { bg: '#fee2e2', text: '#b91c1c' }
 }
 
-const categoryIcons = ['🦷', '🔧', '✨', '◈', '♡', '⚙', '◇', '⚡', '✦', '♡', '◉', '⌁']
-const categoryBadges = ['COMPLETE CARE', 'RESTORE', 'SMILE DESIGN', 'PAINLESS', 'GENTLE CARE', 'PERMANENT SOLUTION', 'INVISIBLE OPTION', 'SAME DAY', 'CHILD-FRIENDLY', 'EMERGENCY CARE', 'SPECIALIST CARE', 'RE-TREATMENT']
-const categoryColors = ['mint', 'gold', 'purple', 'teal', 'pink', 'blue', 'mint', 'red', 'pink', 'red', 'purple', 'teal']
-
 function ServiceCard({ service }) {
   const [optionsOpen, setOptionsOpen] = useState(false)
   const palette = badgePalette[service.badgeColor] || badgePalette.teal
@@ -137,18 +296,31 @@ function ServiceCard({ service }) {
         ) : (
           <div className="svc-card-no-img">{service.icon}</div>
         )}
-        <span
-          className="svc-badge"
-          style={{ background: palette.bg, color: palette.text }}
-        >
-          {service.badge}
-        </span>
       </div>
 
       <div className="svc-card-body">
-        <div className="svc-card-header">
-          <span className="svc-icon">{service.icon}</span>
-          <h3 className="svc-title">{service.name}</h3>
+        <div className="svc-card-header" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span className="svc-icon">{service.icon}</span>
+            <h3 className="svc-title" style={{ margin: 0 }}>{service.name}</h3>
+          </div>
+          {service.badge && (
+            <span
+              className="svc-badge-inline"
+              style={{
+                background: palette.bg,
+                color: palette.text,
+                fontSize: '10px',
+                fontWeight: '800',
+                padding: '4px 10px',
+                borderRadius: '999px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}
+            >
+              {service.badge}
+            </span>
+          )}
         </div>
 
         <p className="svc-desc">{service.desc}</p>
@@ -205,13 +377,6 @@ function ServiceCard({ service }) {
 }
 
 export default function Services() {
-  // The 11 category entries are the complete service list shown on this page.
-  const filteredCategories = serviceCategories.map(([category, items], categoryIndex) => [
-    category,
-    items,
-    categoryIndex
-  ])
-
   return (
     <div className="editorial-page services-page">
 
@@ -246,12 +411,12 @@ export default function Services() {
         </div>
       </section>
 
-      {/* 2. Our 11 Core Services */}
+      {/* 2. Our Services Catalogue */}
       <section className="section svc-featured-section">
         <div className="shell">
           <div className="svc-featured-heading">
             <div>
-              <Badge variant="blue">Our 12 Core Services</Badge>
+              <Badge variant="blue">Our 15 Comprehensive Services</Badge>
               <h2>
                 Specialised care,<br />
                 <em>delivered with precision.</em>
@@ -261,29 +426,15 @@ export default function Services() {
               </p>
             </div>
             <div className="svc-heading-meta">
-              <div><strong>10+</strong><span>Core Services</span></div>
+              <div><strong>15</strong><span>Services Available</span></div>
               <div><strong>4.9★</strong><span>Patient Rating</span></div>
               <div><strong>{clinic.experience}</strong><span>Years Trusted</span></div>
             </div>
           </div>
 
           <div className="svc-card-grid">
-            {filteredCategories.map(([category, items, categoryIndex]) => (
-              <ServiceCard
-                key={category}
-                service={{
-                  icon: categoryIcons[categoryIndex],
-                  badge: categoryBadges[categoryIndex],
-                  badgeColor: categoryColors[categoryIndex],
-                  name: category,
-                  desc: `Complete ${category.toLowerCase()} planned around your comfort, oral health, and long-term results.`,
-                  image: serviceImages[categoryIndex],
-                  about: serviceInformation[categoryIndex],
-                  detailDesc: `Our ${category.toLowerCase()} is planned after a careful consultation and explained clearly before treatment begins. We focus on comfortable care, modern techniques, and results that support your long-term oral health.`,
-                  checks: items,
-                  options: []
-                }}
-              />
+            {featuredServicesList.map((service) => (
+              <ServiceCard key={service.name} service={service} />
             ))}
           </div>
         </div>

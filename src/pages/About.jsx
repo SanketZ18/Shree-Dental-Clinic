@@ -11,7 +11,10 @@ import {
   ClipboardList,
   Star,
   Stethoscope,
-  Smile
+  Smile,
+  CreditCard,
+  Wallet,
+  CheckCircle2
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import CTA from '../components/CTA'
@@ -265,22 +268,79 @@ export default function About() {
         </div>
       </section>
 
-      {/* Promise Banner */}
-      <section className="section team-promise-section">
-        <div className="shell team-promise-card">
-          <div className="promise-icon">
-            <HeartHandshake size={32} />
-          </div>
-          <div>
-            <Badge variant="white">Our Clinical Promise</Badge>
-            <h2>We treat you like family, not just a patient file.</h2>
-            <p>
-              We believe in building lifelong relationships with families across Kamothe. You will always receive honest assessments, ethical recommendations, and transparent pricing.
+      {/* Terms, Condition and Payment Option Section */}
+      <section className="section payment-terms-section" style={{ background: '#ffffff', padding: '60px 0', borderTop: '1px solid #e2e8f0' }}>
+        <div className="shell">
+          <div style={{ marginBottom: '32px' }}>
+            <Badge variant="blue">Terms, Condition and Payment Option</Badge>
+            <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '36px', margin: '14px 0 8px', color: '#0f172a' }}>
+              Payment Options
+            </h2>
+            <h3 style={{ fontSize: '20px', color: '#0284c7', fontWeight: '600', margin: '0 0 10px' }}>
+              Convenient & Flexible Payment Options
+            </h3>
+            <p style={{ color: '#64748b', fontSize: '15px', maxWidth: '700px', margin: 0 }}>
+              We offer multiple secure and convenient payment options to make your dental treatment easier and more accessible.
             </p>
           </div>
-          <Link to="/contact" className="ui-button ui-button-secondary">
-            Book an appointment <ArrowRight size={16} />
-          </Link>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '24px' }}>
+            {/* Accepted Methods Card */}
+            <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '20px', padding: '28px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '18px' }}>
+                <CreditCard size={24} style={{ color: '#0284c7' }} />
+                <h4 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '18px', margin: 0, color: '#0f172a' }}>
+                  💳 Payment Methods Accepted
+                </h4>
+              </div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '14px', color: '#334155' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                  <CheckCircle2 size={16} style={{ color: '#10b981', flexShrink: 0, marginTop: '3px' }} />
+                  <span><strong>UPI Payments:</strong> Google Pay (GPay) | PhonePe | Amazon Pay | Paytm | All Major UPI Apps</span>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                  <CheckCircle2 size={16} style={{ color: '#10b981', flexShrink: 0, marginTop: '3px' }} />
+                  <span><strong>Debit Cards:</strong> RuPay | Visa | Mastercard</span>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                  <CheckCircle2 size={16} style={{ color: '#10b981', flexShrink: 0, marginTop: '3px' }} />
+                  <span><strong>Credit Cards:</strong> All Major Credit Cards Accepted</span>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                  <CheckCircle2 size={16} style={{ color: '#10b981', flexShrink: 0, marginTop: '3px' }} />
+                  <span><strong>EMI Facility Available:</strong> Bajaj Finserv | Eligible Credit Cards | Eligible Debit Cards</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Flexible EMI Card */}
+            <div style={{ background: 'linear-gradient(135deg, #f0f9ff, #e0f2fe)', border: '1px solid #bae6fd', borderRadius: '20px', padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '18px' }}>
+                  <Sparkles size={24} style={{ color: '#0284c7' }} />
+                  <h4 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '18px', margin: 0, color: '#0f172a' }}>
+                    ✨ Flexible EMI Options
+                  </h4>
+                </div>
+                <div style={{ background: '#ffffff', borderRadius: '14px', padding: '16px 20px', border: '1px dashed #0284c7', marginBottom: '16px' }}>
+                  <strong style={{ fontSize: '16px', color: '#0369a1', display: 'block', marginBottom: '6px' }}>
+                    Now Get Your Dental Treatment with ₹0* Upfront Payment
+                  </strong>
+                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.5' }}>
+                    Choose a convenient EMI option and start your treatment today with <strong>minimal or zero upfront payment*</strong>, subject to eligibility, applicable terms and approval.
+                  </p>
+                </div>
+              </div>
+              <Link to="/contact" className="ui-button ui-button-primary" style={{ alignSelf: 'flex-start' }}>
+                Inquire about EMI Plans <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Terms Disclaimer Note */}
+          <div style={{ background: '#fffbe8', border: '1px solid #fef08a', borderRadius: '12px', padding: '14px 18px', color: '#854d0e', fontSize: '12px', lineHeight: '1.5' }}>
+            <em>*Terms & conditions apply. EMI availability, eligibility, tenure and charges are subject to the respective bank/financial institution.</em>
+          </div>
         </div>
       </section>
 

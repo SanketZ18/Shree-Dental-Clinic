@@ -1,3 +1,12 @@
+import drShrutikaImg from '../../images/DRs/Dr. Shrutika nanaware.jpg'
+import drVinaImg from '../../images/DRs/Dr Vina Madavi.PNG'
+import drRobinImg from '../../images/DRs/Dr.Robin mathew.jpeg'
+import drMeghnaImg from '../../images/DRs/Dr. Meghna Chandrachood.jpeg'
+import drShreyaImg from '../../images/DRs/DR. SHREYA CHHALLANI.PNG'
+import drPrajishaImg from '../../images/DRs/Dr Prajisha prabhakar.PNG'
+import drTinaImg from '../../images/DRs/Dr. Tina Gogoi.jpeg'
+import drRupaliImg from '../../images/DRs/Dr. Rupali Barate.png'
+
 export const clinic = {
   name: 'Shri Dental Care',
   phone: '+919892694771',
@@ -6,7 +15,7 @@ export const clinic = {
   address: 'Shop No 27, 28, Satyaketu Complex, Plot No 09, Opp Union Bank Of India, Near Police Station, Sector 35, Kamothe, Navi Mumbai — 410209',
   experience: '15+',
   patients: '5,000+',
-  serviceCount: 12,
+  serviceCount: 15,
   rating: '4.9/5',
   reviewCount: '500+',
   timings: 'Monday – Sunday: 10:00 AM to 10:00 PM (Open All 7 Days)',
@@ -235,7 +244,7 @@ export const specialists = [
   [
     'Dr. Shrutika S Nanaware',
     'Lead Dentist & Dental Surgeon',
-    '/images/DRs/Dr. Shrutika nanaware.jpg',
+    drShrutikaImg,
     'BDS · Dental Surgeon (Since 2013). Experienced Dental Surgeon in Navi Mumbai with more than 10 years of clinical practice across top hospitals. Blends modern technology with gentle guidance in general, cosmetic and restorative dentistry. Believes good care begins with listening.',
     'BDS',
     '10+ Years Practice (Since 2013)'
@@ -243,15 +252,31 @@ export const specialists = [
   [
     'Dr. Vina Madavi',
     'Renowned Dental Surgeon',
-    '/images/DRs/Dr Vina Madavi.PNG',
+    drVinaImg,
     'BDS · 15 Years Experience. Renowned Dental Surgeon with deep clinical expertise in comprehensive oral health and preventive care.',
     'BDS',
     '15 Years Experience'
   ],
   [
+    'Dr. Robin Mathew',
+    'Orthodontist',
+    drRobinImg,
+    'MDS (Orthodontics) · 15 Years Experience. Specialised in orthodontics, teeth alignment, braces, and clear aligners.',
+    'MDS',
+    '15 Years Experience'
+  ],
+  [
+    'Dr. Meghna Chandrachood',
+    'Dental Specialist',
+    drMeghnaImg,
+    'MDS · 7 Years Experience. Dedicated specialist providing advanced dental treatments with precision, gentle care, and patient comfort.',
+    'MDS',
+    '7 Years Experience'
+  ],
+  [
     'Dr. Shreya Chhallani',
     'Compassionate Dental Surgeon',
-    '/images/DRs/DR. SHREYA CHHALLANI.PNG',
+    drShreyaImg,
     'BDS. Compassionate Dental Surgeon providing gentle, patient-centered dentistry and aesthetic restorations.',
     'BDS',
     'Aesthetic & Restorative'
@@ -259,7 +284,7 @@ export const specialists = [
   [
     'Dr. Prajisha Prabhakar',
     'Experienced Dental Surgeon',
-    '/images/DRs/Dr Prajisha prabhakar.PNG',
+    drPrajishaImg,
     'BSc, BDS · 12 Years Experience. Experienced Dental Surgeon with hands-on excellence in restorative and family dentistry.',
     'BSc, BDS',
     '12 Years Experience'
@@ -267,7 +292,7 @@ export const specialists = [
   [
     'Dr. Tina Gogoi',
     'Dental Surgeon',
-    '/images/DRs/Dr. Tina Gogoi.jpeg',
+    drTinaImg,
     'BDS · Dental Surgeon (5 Years Experience). Dedicated to providing gentle, high-quality clinical care, restorative procedures, and proactive oral health guidance.',
     'BDS',
     '5 Years Experience'
@@ -275,7 +300,7 @@ export const specialists = [
   [
     'Dr. Rupali Barate',
     'Pediatric & Preventive Dentist',
-    '/images/DRs/Dr. Rupali Barate.png',
+    drRupaliImg,
     'MDS (Pediatric & Preventive Dentistry) · 6 Years Experience. Specialized in fear-free, gentle child dentistry, early preventive care, and healthy young smiles.',
     'MDS',
     '6 Years Experience'
