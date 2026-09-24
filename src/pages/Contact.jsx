@@ -200,13 +200,7 @@ export default function Contact() {
               </span>
             </div>
 
-            <div className="payment-modes-box">
-              <div className="payment-modes-header">
-                <CreditCard size={18} />
-                <strong>Accepted Payment Methods:</strong>
-              </div>
-              <p>UPI (GPay / PhonePe / Paytm), Credit & Debit Cards (Visa/Mastercard), Cash, and 0% Interest EMI options for Implants and Aligners.</p>
-            </div>
+
           </div>
 
           {/* Right: Interactive Contact Form saving to Google Sheets */}

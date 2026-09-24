@@ -49,7 +49,7 @@ const featuredServicesList = [
   },
   {
     name: 'OPG-CBCT',
-    image: imgOralSurgery,
+    image: imgOpgCbct,
     icon: '🔍',
     badge: 'DIGITAL DIAGNOSTICS',
     badgeColor: 'blue',
@@ -65,7 +65,7 @@ const featuredServicesList = [
   },
   {
     name: 'Oral Surgery',
-    image: imgOpgCbct,
+    image: imgOralSurgery,
     icon: '⚙',
     badge: 'PAIN-FREE SURGERY',
     badgeColor: 'red',
@@ -275,13 +275,13 @@ const featuredServicesList = [
 
 // Badge color map
 const badgePalette = {
-  mint:   { bg: '#dcfce7', text: '#16a34a' },
-  gold:   { bg: '#fef9c3', text: '#a16207' },
-  blue:   { bg: '#dbeafe', text: '#1d4ed8' },
-  teal:   { bg: '#ccfbf1', text: '#0f766e' },
+  mint: { bg: '#dcfce7', text: '#16a34a' },
+  gold: { bg: '#fef9c3', text: '#a16207' },
+  blue: { bg: '#dbeafe', text: '#1d4ed8' },
+  teal: { bg: '#ccfbf1', text: '#0f766e' },
   purple: { bg: '#ede9fe', text: '#7c3aed' },
-  pink:   { bg: '#fce7f3', text: '#be185d' },
-  red:    { bg: '#fee2e2', text: '#b91c1c' }
+  pink: { bg: '#fce7f3', text: '#be185d' },
+  red: { bg: '#fee2e2', text: '#b91c1c' }
 }
 
 function ServiceCard({ service }) {
