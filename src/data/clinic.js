@@ -250,20 +250,12 @@ export const specialists = [
     '10+ Years Practice (Since 2013)'
   ],
   [
-    'Dr. Vina Madavi',
-    'Renowned Dental Surgeon',
-    drVinaImg,
-    'BDS · 15 Years Experience. Renowned Dental Surgeon with deep clinical expertise in comprehensive oral health and preventive care.',
-    'BDS',
-    '15 Years Experience'
-  ],
-  [
-    'Dr. Robin Mathew',
-    'Orthodontist',
-    drRobinImg,
-    'MDS (Orthodontics) · 15 Years Experience. Specialised in orthodontics, teeth alignment, braces, and clear aligners.',
-    'MDS',
-    '15 Years Experience'
+    'Dr. Prajisha Prabhakar',
+    'Experienced Dental Surgeon',
+    drPrajishaImg,
+    'BSc, BDS · 12 Years Experience. Experienced Dental Surgeon with hands-on excellence in restorative and family dentistry.',
+    'BSc, BDS',
+    '12 Years Experience'
   ],
   [
     'Dr. Meghna Chandrachood',
@@ -274,20 +266,28 @@ export const specialists = [
     '7 Years Experience'
   ],
   [
-    'Dr. Shreya Chhallani',
-    'Compassionate Dental Surgeon',
-    drShreyaImg,
-    'BDS. Compassionate Dental Surgeon providing gentle, patient-centered dentistry and aesthetic restorations.',
-    'BDS',
-    'Aesthetic & Restorative'
+    'Dr. Rupali Barate',
+    'Pediatric & Preventive Dentist',
+    drRupaliImg,
+    'MDS (Pediatric & Preventive Dentistry) · 6 Years Experience. Specialized in fear-free, gentle child dentistry, early preventive care, and healthy young smiles.',
+    'MDS',
+    '6 Years Experience'
   ],
   [
-    'Dr. Prajisha Prabhakar',
-    'Experienced Dental Surgeon',
-    drPrajishaImg,
-    'BSc, BDS · 12 Years Experience. Experienced Dental Surgeon with hands-on excellence in restorative and family dentistry.',
-    'BSc, BDS',
-    '12 Years Experience'
+    'Dr. Robin Mathew',
+    'Orthodontist',
+    drRobinImg,
+    'MDS (Orthodontics) · 15 Years Experience. Specialised in orthodontics, teeth alignment, braces, and clear aligners.',
+    'MDS',
+    '15 Years Experience'
+  ],
+  [
+    'Dr. Vina Madavi',
+    'Renowned Dental Surgeon',
+    drVinaImg,
+    'BDS · 15 Years Experience. Renowned Dental Surgeon with deep clinical expertise in comprehensive oral health and preventive care.',
+    'BDS',
+    '15 Years Experience'
   ],
   [
     'Dr. Tina Gogoi',
@@ -298,12 +298,12 @@ export const specialists = [
     '5 Years Experience'
   ],
   [
-    'Dr. Rupali Barate',
-    'Pediatric & Preventive Dentist',
-    drRupaliImg,
-    'MDS (Pediatric & Preventive Dentistry) · 6 Years Experience. Specialized in fear-free, gentle child dentistry, early preventive care, and healthy young smiles.',
-    'MDS',
-    '6 Years Experience'
+    'Dr. Shreya Chhallani',
+    'Compassionate Dental Surgeon',
+    drShreyaImg,
+    'BDS. Compassionate Dental Surgeon providing gentle, patient-centered dentistry and aesthetic restorations.',
+    'BDS',
+    'Aesthetic & Restorative'
   ]
 ]
 
