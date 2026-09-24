@@ -282,7 +282,7 @@ export const specialists = [
     '15 Years Experience'
   ],
   [
-    'Dr. Vina Madavi',
+    'Dr. Veena Madavi',
     'Renowned Dental Surgeon',
     drVinaImg,
     'BDS · 15 Years Experience. Renowned Dental Surgeon with deep clinical expertise in comprehensive oral health and preventive care.',
