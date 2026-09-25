@@ -14,8 +14,9 @@ export const clinic = {
   email: 'shridentalcare@gmail.com',
   address: 'Shop No 27, 28, Satyaketu Complex, Plot No 09, Opp Union Bank Of India, Near Police Station, Sector 35, Kamothe, Navi Mumbai — 410209',
   experience: '15+',
-  patients: '5,000+',
-  serviceCount: 15,
+  hygiene: '100%',
+  sterilization: '100%',
+  serviceCount: 17,
   rating: '4.9/5',
   reviewCount: '500+',
   timings: 'Monday – Sunday: 10:00 AM to 10:00 PM (Open All 7 Days)',
@@ -37,51 +38,40 @@ export const navItems = [
 export const services = [
   {
     icon: '🦷',
-    badge: 'COMPREHENSIVE',
+    badge: 'FIRST VISIT & CHECK-UP',
     badgeColor: 'mint',
-    name: 'Dental Checkup',
-    desc: 'A thorough dental assessment using advanced imaging to evaluate your complete oral health and plan the right care.',
+    name: 'PREVENTIVE DENTAL TREATMENTS',
+    desc: 'Your First Visit. Your Complete Dental Check-Up. Your Healthier Smile.',
     checks: [
-      'Complete oral examination',
-      'Digital X-Ray / OPG / CBCT scanning',
-      'Personalised treatment planning'
+      'Complete Dental Check-Up & Oral Examination',
+      'Early Detection of Cavities, Gum Problems & Infections',
+      'Clear, Personalized Preventive Treatment Plan'
     ],
-    options: [
-      { label: 'Oral Examination', tag: 'A' },
-      { label: 'OPG / CBCT / X-Ray Imaging', tag: 'B' }
-    ]
+    options: []
   },
   {
-    icon: '👑',
-    badge: 'WARRANTY UP TO 15 YRS',
-    badgeColor: 'gold',
-    name: 'Dental Crowns (Caps)',
-    desc: 'Precision-crafted tooth caps to restore strength, shape and aesthetics — from budget-friendly metal to ultra-premium zirconia.',
+    icon: '🔍',
+    badge: 'DIGITAL DIAGNOSTICS',
+    badgeColor: 'blue',
+    name: 'OPG & CBCT IMAGING',
+    desc: 'See More. Diagnose Precisely. Treat Confidently.',
     checks: [
-      'Metal-free & biocompatible options',
-      'Perfect shade matching',
-      'Long-term manufacturer warranty'
+      'Detailed 2D Panoramic OPG & 3D CBCT Imaging',
+      'Supports Precise Planning for Implants, RCT & Surgery',
+      'Quick, Convenient & Low-Radiation Digital Diagnostics'
     ],
-    options: [
-      { label: 'Metal Crown', tag: 'A' },
-      { label: 'PFM (Porcelain-Fused-Metal) Crown', tag: 'B' },
-      { label: 'CAD/CAM Crown', tag: 'C', warranty: 'Warranty 3–5 Yrs' },
-      { label: 'DMLS Crown', tag: 'D', warranty: 'Warranty 5–7 Yrs' },
-      { label: 'Zirconia Crown', tag: 'E', warranty: 'Warranty 10–15 Yrs' },
-      { label: 'Bruxzir Crown', tag: 'F' },
-      { label: 'Ceramic Facing Crown', tag: 'G' }
-    ]
+    options: []
   },
   {
     icon: '🔩',
-    badge: 'PERMANENT SOLUTION',
+    badge: 'IMMEDIATE LOADING',
     badgeColor: 'blue',
-    name: 'Dental Implants',
-    desc: 'Permanent, natural-looking tooth roots anchored into the jawbone — restored to full function within days or weeks.',
+    name: 'IMPLANT',
+    desc: 'Fixed Teeth. Faster Function. A Confident New Smile.',
     checks: [
-      'Titanium precision-fit implant',
-      'Crown loading in as little as 48 hrs',
-      'Lifelong strength & natural feel'
+      'Fixed Teeth & Crown Loading in as Little as 48–72 Hours',
+      'Strategic Design Suitable for Patients with Severe Bone Loss',
+      'Suitable for High-Risk Profiles with Fewer Procedures'
     ],
     options: [
       { label: 'Basal Implant', tag: 'A', warranty: 'Crown Loading: 48–72 Hrs' },
@@ -89,67 +79,184 @@ export const services = [
     ]
   },
   {
-    icon: '⌁',
-    badge: 'PAINLESS',
-    badgeColor: 'teal',
-    name: 'Root Canal Treatment (RCT)',
-    desc: 'Advanced laser-assisted root canal to relieve toothache, eliminate infection & save your natural tooth.',
+    icon: '✨',
+    badge: 'INVISIBLE OPTION',
+    badgeColor: 'mint',
+    name: 'clear Aligner',
+    desc: 'Straighten Your Smile. Discreetly. Comfortably. Confidently.',
     checks: [
-      'Deep laser canal sterilization',
-      'Single-visit option available',
-      'Zero post-procedure pain'
-    ],
-    options: []
-  },
-  {
-    icon: '☼',
-    badge: 'NATURAL FINISH',
-    badgeColor: 'purple',
-    name: 'Cosmetic Smile Makeover',
-    desc: 'Custom smile design combining whitening, veneers, bonding, and contouring for a stunning, natural look.',
-    checks: [
-      'Custom shade selection',
-      'Teeth whitening bleaching',
-      'Porcelain veneers & bonding'
+      'Nearly Invisible & Transparent Custom Clear Aligners',
+      'Comfortable & Removable While Eating, Brushing & Flossing',
+      'Digitally Planned Custom Alignment for Optimal Results'
     ],
     options: []
   },
   {
     icon: '◇',
-    badge: 'INVISIBLE OPTION',
-    badgeColor: 'mint',
-    name: 'Braces & Clear Aligners',
-    desc: 'Orthodontic correction with metal, ceramic, lingual braces or invisible Invisalign-style clear aligners.',
+    badge: 'SMILE ALIGNMENT',
+    badgeColor: 'purple',
+    name: 'Braces ortho',
+    desc: 'Straighten Your Teeth. Transform Your Smile. Elevate Your Confidence.',
     checks: [
-      'Metal, ceramic & lingual braces',
-      'Clear aligners (Invisalign)',
-      'Fixed & removable retainers'
+      'Precise Alignment for Crooked, Crowded & Uneven Teeth',
+      'Naturally Balanced Aesthetics & Beautiful Smile Makeover',
+      'Improved Chewing Function, Comfort & Bite Stability'
+    ],
+    options: []
+  },
+  {
+    icon: '⌁',
+    badge: 'PAINLESS RCT',
+    badgeColor: 'teal',
+    name: 'RCT & RE-RCT',
+    desc: 'Save Your Natural Tooth. Treat It Faster. Smile With Confidence.',
+    checks: [
+      'Single-Sitting RCT Available for Suitable Cases',
+      'Preserve Your Natural Tooth & Eliminate Deep Canal Infection',
+      'Specialized Re-RCT for Teeth with Persistent Infection'
+    ],
+    options: []
+  },
+  {
+    icon: '🦷',
+    badge: 'RESTORATIVE CARE',
+    badgeColor: 'gold',
+    name: 'Dental filling',
+    desc: 'Tooth-colored composite fillings, inlays, and onlays to repair decayed or broken teeth and restore original strength.',
+    checks: [
+      'Tooth-colored (composite) fillings',
+      'Amalgam (silver) fillings & inlays/onlays',
+      'Seamless cavity repair & restoration'
     ],
     options: []
   },
   {
     icon: '♡',
-    badge: 'GENTLE CARE',
+    badge: 'GENTLE CHILD CARE',
     badgeColor: 'pink',
-    name: 'Pediatric Dentistry',
-    desc: 'Anxiety-free child dental care including fluoride varnish, sealants, pulpotomy and space maintainers.',
+    name: 'PEDIATRIC DENTISTRY',
+    desc: 'Happy Visits. Healthy Smiles. Little Patients, Big Care.',
     checks: [
-      'Child-friendly anxiety-free visits',
-      'Fluoride & pit/fissure sealants',
-      'Pulpotomy / Pulpectomy'
+      'Child-Friendly, Welcoming & Anxiety-Free Experience',
+      'Pulpotomy Care to Manage Deep Decay in Baby Teeth',
+      'Fluoride Varnish Enamel Strengthening & Protection'
+    ],
+    options: []
+  },
+  {
+    icon: '🌿',
+    badge: 'GUM HEALTH',
+    badgeColor: 'mint',
+    name: 'TEETH CLEANING & SCALING',
+    desc: 'Clean Teeth. Healthy Gums. A Fresher, Brighter Smile.',
+    checks: [
+      'Ultrasonic Scaling Removes Hardened Tartar & Plaque Buildup',
+      'Helps Reduce Gum Inflammation, Bleeding & Periodontal Risk',
+      'Removes Bacteria & Unpleasant Odors for Fresher Breath'
+    ],
+    options: []
+  },
+  {
+    icon: '☼',
+    badge: 'SMILE BRIGHTENING',
+    badgeColor: 'purple',
+    name: 'TEETH WHITENING & BLEACHING',
+    desc: 'Brighten Your Smile. Boost Your Confidence.',
+    checks: [
+      'Lightens Dental Stains & Enhances Natural Tooth Shade',
+      'Clinically Supervised Treatment for Controlled, Safe Whitening',
+      'Effective Reduction of Tea, Coffee, Tobacco & Aging Stains'
+    ],
+    options: []
+  },
+  {
+    icon: '💎',
+    badge: 'COSMETIC VENEERS',
+    badgeColor: 'purple',
+    name: 'DENTAL VENEERS',
+    desc: 'Transform Your Smile. Refine Your Look. Smile With Confidence.',
+    checks: [
+      'Improve Discolored, Chipped, Spaced or Uneven Teeth',
+      'Customized Shape & Natural Shade Tailored to Facial Features',
+      'Durable, Long-Lasting Cosmetic Transformation'
+    ],
+    options: []
+  },
+  {
+    icon: '⚙',
+    badge: 'PAINLESS SURGERY',
+    badgeColor: 'red',
+    name: 'oral surgery',
+    desc: 'Advanced Surgical Care. Gentle Approach. Confident Recovery.',
+    checks: [
+      'Careful, Comfort-Focused Removal of Damaged Teeth',
+      'Expert Wisdom Tooth Disimpaction to Prevent Infection',
+      'Advanced Jawbone Grafting & Sinus Lift Procedures'
+    ],
+    options: []
+  },
+  {
+    icon: '🦷',
+    badge: 'REMOVABLE PROSTHETICS',
+    badgeColor: 'blue',
+    name: 'REMOVABLE DENTURES',
+    desc: 'Restore Your Smile. Restore Your Confidence.',
+    checks: [
+      'Complete & Partial Dentures Custom-Fitted for Missing Teeth',
+      'Significantly Improves Chewing Function & Everyday Comfort',
+      'Convenient Removable Design for Simple Daily Maintenance'
+    ],
+    options: []
+  },
+  {
+    icon: '🔩',
+    badge: 'FIXED REHABILITATION',
+    badgeColor: 'blue',
+    name: 'IMPLANT-SUPPORTED FIXED DENTURES',
+    desc: 'Secure Your Smile. Restore Your Function. Live With Confidence.',
+    checks: [
+      'Implants Anchor Dentures Securely with Zero Slipping',
+      'Superior Chewing Power & Natural Speech Clarity',
+      'Preserves Underlying Jawbone Density from Bone Resorption'
+    ],
+    options: []
+  },
+  {
+    icon: '⌁',
+    badge: 'MINIMALLY INVASIVE',
+    badgeColor: 'teal',
+    name: 'LASER DENTISTRY',
+    desc: 'Advanced Technology. Gentle Treatment. Better Dental Comfort.',
+    checks: [
+      'High-Precision Treatment Minimizing Impact on Healthy Tissue',
+      'Painless, Comfortable Experience Often with Minimal Anesthesia',
+      'Controlled Bleeding & Faster Tissue Healing'
     ],
     options: []
   },
   {
     icon: '⚡︎',
-    badge: 'SAME DAY',
+    badge: 'SAME DAY RELIEF',
     badgeColor: 'red',
     name: 'Emergency Dental Care',
-    desc: 'Immediate same-day relief for toothaches, broken teeth, knocked-out teeth and dental abscesses.',
+    desc: 'Immediate same-day priority treatment for severe toothaches, broken teeth, trauma, and dental abscesses.',
     checks: [
       'Same-day emergency appointments',
       'Trauma & abscess management',
       'Broken / chipped tooth repair'
+    ],
+    options: []
+  },
+  {
+    icon: '◉',
+    badge: 'SPECIALIST CARE',
+    badgeColor: 'purple',
+    name: 'Other Specialized Treatments',
+    desc: 'Targeted care for jaw-joint TMJ pain, custom sports mouthguards, bruxism night guards, and oral lesion screenings.',
+    checks: [
+      'TMJ (jaw joint) disorder treatment',
+      'Night guards for teeth grinding (bruxism)',
+      'Mouthguards for sports & oral screenings'
     ],
     options: []
   }
@@ -247,7 +354,7 @@ export const specialists = [
     drShrutikaImg,
     'BDS · Dental Surgeon (Since 2013). Experienced Dental Surgeon in Navi Mumbai with more than 10 years of clinical practice across top hospitals. Blends modern technology with gentle guidance in general, cosmetic and restorative dentistry. Believes good care begins with listening.',
     'BDS',
-    '10+ Years Practice (Since 2013)'
+    'Since 2013'
   ],
   [
     'Dr. Prajisha Prabhakar',
@@ -335,7 +442,7 @@ export const clinicalHighlights = [
   },
   {
     title: '15+ Years of Experience',
-    desc: 'Trusted by over 5,000+ local families, police personnel, and corporate professionals across Navi Mumbai.',
+    desc: 'Trusted by local families, police personnel, and corporate professionals across Navi Mumbai.',
     icon: 'Award'
   }
 ]

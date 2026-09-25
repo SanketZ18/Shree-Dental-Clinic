@@ -98,16 +98,16 @@ export default function About() {
             <small>Years of Clinical Trust</small>
           </div>
           <div>
-            <strong>5,000<span>+</span></strong>
-            <small>Happy Smiles Cared For</small>
+            <strong>100<span>%</span></strong>
+            <small>Hospital-Grade Sterilization</small>
           </div>
           <div>
-            <strong>10<span>+</span></strong>
+            <strong>17<span>+</span></strong>
             <small>Specialised Dental Services</small>
           </div>
           <div>
             <strong>4.9<span>★</span></strong>
-            <small>Rated by 133+ Patients</small>
+            <small>Top-Rated Google Reviews</small>
           </div>
         </div>
       </section>
@@ -238,7 +238,7 @@ export default function About() {
               Trusted Care & Comprehensive Technology in Kamothe
             </h4>
             <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.65', marginBottom: '14px' }}>
-              Shri Dental Care has been a trusted name in Kamothe, Navi Mumbai for over 15 years, rated 4.9★ from 133+ patients. We follow strict hygiene and sterilization protocols at every step, so you can always feel safe and cared for in our hands.
+              Shri Dental Care has been a trusted name in Kamothe, Navi Mumbai for over 15 years, rated 4.9★ across Google Reviews. We follow strict hygiene and sterilization protocols at every step, so you can always feel safe and cared for in our hands.
             </p>
             <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.65', margin: 0 }}>
               Our practice provides a complete range of dental procedures including root canal treatment (RCT), ceramic & CAD/CAM crowns and bridges, dental implants, braces & clear aligners, laser dentistry, ultrasonic scaling & polishing, and in-house digital X-ray, OPG & CBCT scanning — all delivered with gentle care and modern technology.

@@ -34,7 +34,7 @@ export default function Footer() {
             <Link to="/services">Teeth Whitening & Makeover</Link>
             <Link to="/services">Pediatric Child Care</Link>
             <Link to="/services" className="footer-view-all">
-              View All 11 Services <ArrowUpRight size={13} />
+              View All 17 Services <ArrowUpRight size={13} />
             </Link>
           </div>
         </div>

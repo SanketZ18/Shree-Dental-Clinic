@@ -103,9 +103,9 @@ export default function Home() {
               <small>Years of Clinical Trust</small>
             </BentoCard>
             <BentoCard className="metric-card blue-card">
-              <span className="metric-emoji">😊</span>
-              <strong>{clinic.patients}</strong>
-              <small>Happy Smiles Restored</small>
+              <ShieldCheck />
+              <strong>100%</strong>
+              <small>Hospital-Grade Sterilization</small>
             </BentoCard>
             <BentoCard className="metric-card doctors-card">
               <Users />
@@ -163,7 +163,7 @@ export default function Home() {
               </h3>
               <p>Personalised treatment plans, modern rotary instruments, and honest advice.</p>
               <Link className="bento-link" to="/services">
-                Explore all 11 services <ArrowRight size={16} />
+                Explore all 17 services <ArrowRight size={16} />
               </Link>
             </BentoCard>
             {treatments.map(([title, sub, icon], i) => (

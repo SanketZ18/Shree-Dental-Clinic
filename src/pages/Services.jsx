@@ -29,122 +29,116 @@ import imgRestorative from '../../images/Services/2.jpeg'
 import imgEmergency from '../../images/Services/10.jpeg'
 import imgSpecialized from '../../images/Services/11.jpeg'
 import imgReRct from '../../images/Services/12.jpeg'
+import imgWhitening from '../../images/Services/3.jpeg'
+import imgScaling from '../../images/Services/5.jpeg'
+import imgImplants from '../../images/Services/6.jpeg'
+import imgLaser from '../../images/Services/Laser Dentistry.jpeg'
 
 const featuredServicesList = [
   {
-    name: 'Clear Aligners',
-    image: imgClearAligners,
-    icon: '✨',
-    badge: 'INVISIBLE OPTION',
+    name: 'PREVENTIVE DENTAL TREATMENTS',
+    image: imgPreventive,
+    icon: '🦷',
+    badge: 'FIRST VISIT & CHECK-UP',
     badgeColor: 'mint',
-    desc: 'Custom 3D-designed clear invisible aligners for discreet, comfortable, and efficient teeth straightening without metal wires.',
+    desc: 'Your First Visit. Your Complete Dental Check-Up. Your Healthier Smile.',
     about: {
-      text: 'Clear aligners offer a transparent, removable alternative to traditional braces. Custom-crafted trays gradually shift teeth into position while allowing easy eating and oral hygiene.'
+      text: 'At Shri Dental Care, your first visit is focused on understanding your complete oral health and identifying potential dental concerns early—before they become bigger problems.'
     },
     checks: [
-      'Clear aligners (Invisalign & custom aligners)',
-      '3D digital smile scan & treatment plan',
-      'Removable, comfortable & virtually invisible'
+      'Complete Dental Check-Up & Oral Examination',
+      'Early Detection of Cavities, Gum Problems & Infections',
+      'Clear, Personalized Preventive Treatment Plan',
+      'Professional Guidance for Lifelong Oral Health'
     ]
   },
   {
-    name: 'OPG-CBCT',
+    name: 'OPG & CBCT IMAGING',
     image: imgOpgCbct,
     icon: '🔍',
     badge: 'DIGITAL DIAGNOSTICS',
     badgeColor: 'blue',
-    desc: 'Advanced 2D Panoramic OPG and 3D CBCT volumetric digital imaging for high-precision diagnosis with ultra-low radiation.',
+    desc: 'See More. Diagnose Precisely. Treat Confidently.',
     about: {
-      text: 'Digital panoramic OPG and 3D CBCT scans provide detailed views of teeth, jawbone density, root structures, and nerves, enabling safe and accurate treatment planning.'
+      text: 'At Shri Dental Care, advanced OPG and CBCT imaging helps provide detailed views of your teeth, jaw, bone, and surrounding structures for accurate diagnosis and treatment planning.'
     },
     checks: [
-      'Full-mouth 2D OPG panoramic X-ray',
-      '3D CBCT high-resolution scanning',
-      'Instant low-radiation digital evaluation'
+      'Detailed 2D Panoramic OPG & 3D CBCT Imaging',
+      'Supports Precise Planning for Implants, RCT & Surgery',
+      'High-Resolution Visualization of Complex Dental Structures',
+      'Quick, Convenient & Low-Radiation Digital Diagnostics'
     ]
   },
   {
-    name: 'Oral Surgery',
-    image: imgOralSurgery,
-    icon: '⚙',
-    badge: 'PAIN-FREE SURGERY',
-    badgeColor: 'red',
-    desc: 'Specialized surgical extractions, painless wisdom tooth removal, bone grafting, and sinus lifts performed by experienced oral surgeons.',
+    name: 'IMPLANT',
+    image: imgImplants,
+    icon: '🔩',
+    badge: 'IMMEDIATE LOADING',
+    badgeColor: 'blue',
+    desc: 'Fixed Teeth. Faster Function. A Confident New Smile.',
     about: {
-      text: 'Oral surgery includes planned procedures such as extractions and bone-related treatments when a tooth cannot be safely managed with routine care.'
+      text: 'At Shri Dental Care, Immediate Loading Implants offer a modern approach to full-mouth rehabilitation—helping eligible patients regain fixed teeth and functional comfort in as little as 48–72 hours, depending on individual clinical conditions.'
     },
     checks: [
-      'Simple & surgical tooth extraction',
-      'Painless wisdom tooth removal',
-      'Jawbone grafting & sinus lift procedures'
+      'Fixed Teeth & Crown Loading in as Little as 48–72 Hours',
+      'Strategic Design Suitable for Patients with Severe Bone Loss',
+      'Suitable for High-Risk Profiles (Controlled Diabetics & Smokers)',
+      'Fewer Surgical Stages, Greater Efficiency & Tissue Health'
     ]
   },
   {
-    name: 'Orthodontics',
+    name: 'clear Aligner',
+    image: imgClearAligners,
+    icon: '✨',
+    badge: 'INVISIBLE OPTION',
+    badgeColor: 'mint',
+    desc: 'Straighten Your Smile. Discreetly. Comfortably. Confidently.',
+    about: {
+      text: 'At Shri Dental Care, clear aligners offer a modern, virtually invisible way to achieve a beautifully aligned smile—without the look of traditional braces.'
+    },
+    checks: [
+      'Nearly Invisible & Transparent Custom Clear Aligners',
+      'Comfortable & Removable While Eating, Brushing & Flossing',
+      'Digitally Planned Custom Alignment for Optimal Results',
+      'Fewer Lifestyle Restrictions with Minimal Daily Disruption'
+    ]
+  },
+  {
+    name: 'Braces ortho',
     image: imgOrthodontics,
     icon: '◇',
     badge: 'SMILE ALIGNMENT',
     badgeColor: 'purple',
-    desc: 'Comprehensive orthodontic correction with traditional metal braces, high-aesthetic ceramic braces, and lingual systems.',
+    desc: 'Straighten Your Teeth. Transform Your Smile. Elevate Your Confidence.',
     about: {
-      text: 'Orthodontic treatment gradually moves teeth to improve alignment, bite and appearance using fixed braces or removable clear aligners.'
+      text: 'At Shri Dental Care, modern orthodontic treatment is designed to correct tooth alignment and bite problems while creating a healthier, more confident smile.'
     },
     checks: [
-      'Metal braces & ceramic braces',
-      'Lingual braces & bite alignment',
-      'Fixed & removable retention care'
+      'Precise Alignment for Crooked, Crowded & Uneven Teeth',
+      'Naturally Balanced Aesthetics & Beautiful Smile Makeover',
+      'Improved Chewing Function, Comfort & Bite Stability',
+      'Customized Planning with Metal, Ceramic & Lingual Options'
     ]
   },
   {
-    name: 'Pediatric Dentistry',
-    image: imgPediatric,
-    icon: '♡',
-    badge: 'GENTLE CHILD CARE',
-    badgeColor: 'pink',
-    desc: 'Anxiety-free, child-friendly dental care focusing on preventive fluoride varnish, pit/fissure sealants, and pulpotomy.',
+    name: 'RCT & RE-RCT',
+    image: imgEndodontic,
+    icon: '⌁',
+    badge: 'PAINLESS RCT',
+    badgeColor: 'teal',
+    desc: 'Save Your Natural Tooth. Treat It Faster. Smile With Confidence.',
     about: {
-      text: 'Children benefit from early dental visits, fluoride and sealants, which can help prevent cavities and build healthy habits from the first teeth onward.'
+      text: 'At Shri Dental Care, advanced root canal treatments are designed to relieve infection, preserve natural teeth, and restore comfortable function.'
     },
     checks: [
-      'Child-friendly anxiety-free visits',
-      'Fluoride varnish & pit sealants',
-      'Pulpotomy / Pulpectomy care'
+      'Single-Sitting RCT Available for Suitable Cases',
+      'Preserve Your Natural Tooth & Eliminate Deep Canal Infection',
+      'Specialized Re-RCT for Teeth with Persistent or Past Infection',
+      'Precise, Gentle Techniques for Zero Post-Procedure Pain'
     ]
   },
   {
-    name: 'Tooth Replacement',
-    image: imgToothReplacement,
-    icon: '🔩',
-    badge: 'PERMANENT SOLUTION',
-    badgeColor: 'blue',
-    desc: 'Long-lasting titanium dental implants, implant-supported ceramic crowns/bridges, and custom removable or fixed dentures.',
-    about: {
-      text: 'Implants are placed in the jaw to support a crown, bridge or denture, providing a stable option for replacing one or more missing teeth.'
-    },
-    checks: [
-      'Titanium precision dental implants',
-      'Implant-supported crowns & bridges',
-      'Complete & partial precision dentures'
-    ]
-  },
-  {
-    name: 'Cosmetic Dentistry',
-    image: imgCosmetic,
-    icon: '☼',
-    badge: 'SMILE MAKEOVER',
-    badgeColor: 'purple',
-    desc: 'Custom smile design combining laser teeth whitening, ultra-thin porcelain veneers, composite bonding, and tooth contouring.',
-    about: {
-      text: 'Whitening, veneers, bonding and contouring can improve the appearance of teeth. A dentist should first check that the teeth and gums are healthy.'
-    },
-    checks: [
-      'Teeth whitening (bleaching)',
-      'Porcelain veneers & dental bonding',
-      'Tooth contouring & smile design'
-    ]
-  },
-  {
-    name: 'Dental Filling',
+    name: 'Dental filling',
     image: imgDentalFilling,
     icon: '🦷',
     badge: 'RESTORATIVE CARE',
@@ -160,74 +154,146 @@ const featuredServicesList = [
     ]
   },
   {
-    name: 'Endodontic Treatment',
-    image: imgEndodontic,
-    icon: '⌁',
-    badge: 'PAINLESS RCT',
-    badgeColor: 'teal',
-    desc: 'Rotary laser-assisted root canal treatment (RCT) and re-RCT retreatment to relieve toothache and save infected natural teeth.',
+    name: 'PEDIATRIC DENTISTRY',
+    image: imgPediatric,
+    icon: '♡',
+    badge: 'GENTLE CHILD CARE',
+    badgeColor: 'pink',
+    desc: 'Happy Visits. Healthy Smiles. Little Patients, Big Care.',
     about: {
-      text: 'Root canal care treats infection inside a tooth by removing the infected pulp, cleaning the canals and sealing the tooth to help prevent reinfection.'
+      text: 'At Shri Dental Care, we provide a child-friendly, comfortable, and anxiety-conscious dental experience to help children build healthy smiles and positive dental habits from an early age.'
     },
     checks: [
-      'Single-visit rotary RCT treatment',
-      'Laser canal sterilization & sealing',
-      'Root canal retreatment (Re-RCT)'
+      'Child-Friendly, Welcoming & Anxiety-Free Experience',
+      'Pulpotomy Care to Manage Deep Decay in Baby Teeth',
+      'Fluoride Varnish Enamel Strengthening & Protection',
+      'Pit & Fissure Sealants to Prevent Cavities in Deep Grooves'
     ]
   },
   {
-    name: 'Periodontal',
-    image: imgPeriodontal,
+    name: 'TEETH CLEANING & SCALING',
+    image: imgScaling,
     icon: '🌿',
     badge: 'GUM HEALTH',
     badgeColor: 'mint',
-    desc: 'Comprehensive gum care including ultrasonic scaling, deep root planing, and flap surgery to protect underlying jaw bone.',
+    desc: 'Clean Teeth. Healthy Gums. A Fresher, Brighter Smile.',
     about: {
-      text: 'Gum treatment focuses on removing plaque and tartar, controlling inflammation and protecting the tissues and bone that support the teeth.'
+      text: 'At Shri Dental Care, professional dental cleaning and scaling help remove plaque, tartar, and surface stains that regular brushing cannot completely eliminate.'
     },
     checks: [
-      'Scaling & root planing (deep cleaning)',
-      'Gum flap surgery & grafting',
-      'Periodontal maintenance care'
+      'Ultrasonic Scaling Removes Hardened Tartar & Plaque Buildup',
+      'Helps Reduce Gum Inflammation, Bleeding & Periodontal Risk',
+      'Removes Bacteria & Unpleasant Odors for Fresher Breath',
+      'Polishes Teeth & Removes Surface Stains for a Brighter Look'
     ]
   },
   {
-    name: 'Preventive Treatments',
-    image: imgPreventive,
+    name: 'TEETH WHITENING & BLEACHING',
+    image: imgWhitening,
+    icon: '☼',
+    badge: 'SMILE BRIGHTENING',
+    badgeColor: 'purple',
+    desc: 'Brighten Your Smile. Boost Your Confidence.',
+    about: {
+      text: 'At Shri Dental Care, professional teeth whitening helps reduce surface and intrinsic stains, giving you a brighter, cleaner-looking smile with personalized care.'
+    },
+    checks: [
+      'Lightens Dental Stains & Enhances Natural Tooth Shade',
+      'Clinically Supervised Treatment for Controlled, Safe Whitening',
+      'Effective Reduction of Tea, Coffee, Tobacco & Aging Stains',
+      'Quick Smile Enhancement with Long-Lasting Radiant Results'
+    ]
+  },
+  {
+    name: 'DENTAL VENEERS',
+    image: imgCosmetic,
+    icon: '💎',
+    badge: 'COSMETIC VENEERS',
+    badgeColor: 'purple',
+    desc: 'Transform Your Smile. Refine Your Look. Smile With Confidence.',
+    about: {
+      text: 'At Shri Dental Care, dental veneers offer a customized cosmetic solution to enhance the appearance of teeth and create a more balanced, natural-looking smile.'
+    },
+    checks: [
+      'Improve Discolored, Chipped, Spaced or Uneven Teeth',
+      'Customized Shape & Natural Shade Tailored to Facial Features',
+      'Precision Smile Design Tailored to Individual Aesthetic Goals',
+      'Durable, Long-Lasting Cosmetic Transformation'
+    ]
+  },
+  {
+    name: 'oral surgery',
+    image: imgOralSurgery,
+    icon: '⚙',
+    badge: 'PAINLESS SURGERY',
+    badgeColor: 'red',
+    desc: 'Advanced Surgical Care. Gentle Approach. Confident Recovery.',
+    about: {
+      text: 'At Shri Dental Care, our oral surgical procedures are planned with precision and patient comfort in mind—from routine surgical extractions to advanced procedures supporting implant treatment.'
+    },
+    checks: [
+      'Careful, Comfort-Focused Removal of Damaged Teeth',
+      'Expert Wisdom Tooth Disimpaction to Prevent Infection & Crowding',
+      'Advanced Jawbone Grafting for Deficient Ridge Reconstruction',
+      'Sinus Lift Procedures for Safe Upper Jaw Implant Placement'
+    ]
+  },
+  {
+    name: 'REMOVABLE DENTURES',
+    image: imgToothReplacement,
     icon: '🦷',
-    badge: 'COMPLETE CARE',
-    badgeColor: 'mint',
-    desc: 'Routine examinations, professional ultrasonic scaling, fluoride varnishes and sealants to prevent dental disease.',
+    badge: 'REMOVABLE PROSTHETICS',
+    badgeColor: 'blue',
+    desc: 'Restore Your Smile. Restore Your Confidence.',
     about: {
-      text: 'Routine examinations, professional cleaning, fluoride and sealants help identify problems early and reduce the risk of cavities and gum disease.'
+      text: 'At Shri Dental Care, customized removable dentures are designed to replace missing teeth, restore everyday function, and give you a natural-looking smile.'
     },
     checks: [
-      'Dental check-up (oral examination)',
-      'Professional teeth cleaning (scaling & polishing)',
-      'Fluoride treatment & oral hygiene instructions'
+      'Complete & Partial Dentures Custom-Fitted for Missing Teeth',
+      'Significantly Improves Chewing Function & Everyday Comfort',
+      'Natural-Looking Aesthetics with Custom Shade & Contour',
+      'Convenient Removable Design for Simple Daily Maintenance'
     ]
   },
   {
-    name: 'Restorative Treatments',
+    name: 'IMPLANT-SUPPORTED FIXED DENTURES',
     image: imgRestorative,
-    icon: '🔧',
-    badge: 'RESTORE',
-    badgeColor: 'gold',
-    desc: 'Precision dental crowns (caps), bridges, and composite restorations to rebuild damaged teeth to full strength.',
+    icon: '🔩',
+    badge: 'FIXED REHABILITATION',
+    badgeColor: 'blue',
+    desc: 'Secure Your Smile. Restore Your Function. Live With Confidence.',
     about: {
-      text: 'Fillings repair tooth decay, while crowns, inlays, onlays and bridges rebuild damaged teeth or replace missing tooth structure for improved function.'
+      text: 'At Shri Dental Care, implant-supported fixed dentures provide a stable, secure solution for patients with multiple or complete tooth loss—helping restore both function and smile confidence.'
     },
     checks: [
-      'Tooth-colored composite & silver fillings',
-      'Dental crowns (caps) & dental bridges',
-      'Precision inlays & onlays'
+      'Implants Anchor Dentures Securely with Zero Slipping or Wobble',
+      'Superior Chewing Power & Natural Speech Clarity',
+      'Restores Natural Facial Aesthetics & Lip Support',
+      'Preserves Underlying Jawbone Density from Bone Resorption'
+    ]
+  },
+  {
+    name: 'LASER DENTISTRY',
+    image: imgLaser,
+    icon: '⌁',
+    badge: 'MINIMALLY INVASIVE',
+    badgeColor: 'teal',
+    desc: 'Advanced Technology. Gentle Treatment. Better Dental Comfort.',
+    about: {
+      text: 'At Shri Dental Care, laser dentistry offers a modern approach to selected dental procedures, with a focus on precision, comfort, and minimally invasive care.'
+    },
+    checks: [
+      'High-Precision Treatment Minimizing Impact on Healthy Tissue',
+      'Painless, Comfortable Experience Often with Minimal Anesthesia',
+      'Controlled Bleeding & Coagulation During Soft-Tissue Procedures',
+      'Significantly Faster Healing & Tissue Recovery Times'
     ]
   },
   {
     name: 'Emergency Dental Care',
     image: imgEmergency,
     icon: '⚡',
-    badge: 'EMERGENCY CARE',
+    badge: 'SAME DAY RELIEF',
     badgeColor: 'red',
     desc: 'Immediate same-day priority treatment for severe toothaches, broken teeth, trauma, and dental abscesses.',
     about: {
@@ -253,22 +319,6 @@ const featuredServicesList = [
       'TMJ (jaw joint) disorder treatment',
       'Night guards for teeth grinding (bruxism)',
       'Mouthguards for sports & oral screenings'
-    ]
-  },
-  {
-    name: 'Root Canal Retreatment (Re-RCT)',
-    image: imgReRct,
-    icon: '⌁',
-    badge: 'RE-TREATMENT',
-    badgeColor: 'teal',
-    desc: 'Specialized re-cleaning and sterilisation of previously treated root canals to eliminate persistent infection.',
-    about: {
-      text: 'Root canal retreatment (Re-RCT) is performed when a previously treated tooth becomes re-infected or fails to heal. The canals are re-cleaned, reshaped, and re-sealed.'
-    },
-    checks: [
-      'Re-cleaning & reshaping of previously treated canals',
-      'Removal of old filling material & deep infection',
-      'Laser canal sterilisation & crown restoration'
     ]
   }
 ]
@@ -416,7 +466,7 @@ export default function Services() {
         <div className="shell">
           <div className="svc-featured-heading">
             <div>
-              <Badge variant="blue">Our 15 Comprehensive Services</Badge>
+              <Badge variant="blue">Our {clinic.serviceCount} Comprehensive Services</Badge>
               <h2>
                 Specialised care,<br />
                 <em>delivered with precision.</em>
@@ -426,7 +476,7 @@ export default function Services() {
               </p>
             </div>
             <div className="svc-heading-meta">
-              <div><strong>15</strong><span>Services Available</span></div>
+              <div><strong>{clinic.serviceCount}</strong><span>Services Available</span></div>
               <div><strong>4.9★</strong><span>Patient Rating</span></div>
               <div><strong>{clinic.experience}</strong><span>Years Trusted</span></div>
             </div>
